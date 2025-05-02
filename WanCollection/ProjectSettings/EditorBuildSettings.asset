@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TItleScene.unity
+    guid: 9ab065b7957dca044a75141e3b412a30
+  - enabled: 1
+    path: Assets/Scenes/Select.unity
+    guid: 7b619507617424a4da061db788e78263
+  - enabled: 1
+    path: Assets/Scenes/Afgan.unity
+    guid: e4e06b802f302a940b0146919fe8cdb0
+  - enabled: 1
+    path: Assets/Scenes/Border.unity
+    guid: fc1478d206f455e468be3699bfd18d78
+  - enabled: 1
+    path: Assets/Scenes/Chow.unity
+    guid: d07037db3aedda64dbf3c9cfdd1f55f1
+  - enabled: 1
+    path: Assets/Scenes/Corgi.unity
+    guid: f6b0aa7e6ce7ae046b9e3ac202c17e91
+  - enabled: 1
+    path: Assets/Scenes/Dober.unity
+    guid: 4ae472c523745ca49a81e293a1ac567f
+  - enabled: 1
+    path: Assets/Scenes/Husky.unity
+    guid: 682ad665ee02d8642810025a6dd35ce3
+  - enabled: 1
+    path: Assets/Scenes/Pome.unity
+    guid: 141cc2eb950aa65478cc437a24fcad87
+  - enabled: 1
+    path: Assets/Scenes/Sheltie.unity
+    guid: 89e8249b0dab2b343b9101a4ed3ee179
+  - enabled: 1
+    path: Assets/Scenes/shih.unity
+    guid: 56d8ee8852416f040a5c362a0caac63b
+  m_configObjects: {}
