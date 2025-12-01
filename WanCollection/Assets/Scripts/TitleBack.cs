@@ -5,13 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TitleBack : MonoBehaviour
 {
-    float scenetime = 0;
-    bool flag;
-
     public void change_button() //change_buttonという名前にします
     {
-        flag = true;
-        //SceneManager.LoadScene("TitleScene");//secondを呼び出します
+        SceneManager.LoadScene("TItleScene");//secondを呼び出します
     }
 
     // Start is called before the first frame update
@@ -23,12 +19,6 @@ public class TitleBack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (flag == true)
-        {
-            scenetime += Time.deltaTime;
-            if (scenetime >= 0.1f)
-            SceneManager.LoadScene("TitleScene");//secondを呼び出します
-
-        }
+        
     }
 }

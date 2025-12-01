@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class start : MonoBehaviour
 {
-    float scenetime = 0;
-    bool flag;
+
     public void change_button() //change_buttonという名前にします
     {
-        flag = true;
-        //SceneManager.LoadScene("Select");//secondを呼び出します      
+        SceneManager.LoadScene("Select");//secondを呼び出します
     }
 
         // Start is called before the first frame update
@@ -22,11 +20,6 @@ public class start : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (flag == true) {
-            scenetime += Time.deltaTime;
-            if(scenetime >= 0.1f)
-                SceneManager.LoadScene("Select");//secondを呼び出します      
 
-        }
     }
 }

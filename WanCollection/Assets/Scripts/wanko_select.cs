@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class wanko_select : MonoBehaviour
 {
-    //float scenetime = 0;
-
     public void corgi_button() //change_buttonという名前にします コーギー
     {
-       // flag = true;
         SceneManager.LoadScene("corgi");//secondを呼び出します
     }
 
