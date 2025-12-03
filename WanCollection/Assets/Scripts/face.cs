@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class face : MonoBehaviour
 {
+    [Header("Addressables アドレス")]
+    public string[] addressables;  // 例: "characters/hiiro/face_00"
+
 
     // 画像を格納する配列
     public Sprite[] images;
@@ -17,6 +22,7 @@ public class face : MonoBehaviour
 
     // SpriteRendererを保持
     private SpriteRenderer targetSpriteRenderer;
+    private Image targetImage; // UI Image 用
 
     // 複数のAnimatorを設定
     public List<Animator> animators;
@@ -25,43 +31,95 @@ public class face : MonoBehaviour
     // アニメーションのTrigger名
     public string animationTrigger;
 
+    IEnumerator PreloadSprites()
+    {
+        for (int i = 0; i < addressables.Length; i++)
+        {
+            int index = i;
+            var handle = Addressables.LoadAssetAsync<Sprite>(addressables[i]);
+            yield return handle;
 
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+                images[index] = handle.Result;
+            else
+                Debug.LogError($"[Face] 読み込み失敗: {addressables[index]}");
+        }
+
+        // 最初の画像をセット
+        if (images.Length > 0)
+        {
+            if (targetSpriteRenderer != null) targetSpriteRenderer.sprite = images[0];
+            if (targetImage != null) targetImage.sprite = images[0];
+        }
+    }
 
     void Start()
     {
+        StartCoroutine(PreloadSprites());
+
         // 対象のゲームオブジェクトを名前で検索
         GameObject targetObject = GameObject.Find(targetObjectName);
 
-        if (targetObject != null)
-        {
-            targetSpriteRenderer = targetObject.GetComponent<SpriteRenderer>();
 
-            if (targetSpriteRenderer == null)
-            {
-                Debug.LogError($"{targetObjectName} に SpriteRenderer がアタッチされていません。");
-            }
-            else if (images.Length > 0)
-            {
-                // 最初の画像を設定
-                targetSpriteRenderer.sprite = images[currentIndex];
-            }
-        }
-        else
+        images = new Sprite[addressables.Length];
+        LoadAllImages();
+
+        if (targetObject == null)
         {
             Debug.LogError($"ゲームオブジェクト '{targetObjectName}' が見つかりません。");
+            return;
+        }
+
+        // SpriteRenderer か Image を取得
+        targetSpriteRenderer = targetObject.GetComponent<SpriteRenderer>();
+        targetImage = targetObject.GetComponent<Image>();
+
+        if (targetSpriteRenderer == null && targetImage == null)
+        {
+            Debug.LogError($"{targetObjectName} に SpriteRenderer も Image もアタッチされていません。");
+        }
+
+    }
+
+
+    void LoadAllImages()
+    {
+        for (int i = 0; i < addressables.Length; i++)
+        {
+           
+
+            int index = i;
+            Addressables.LoadAssetAsync<Sprite>(addressables[i]).Completed += handle =>
+            {
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    images[index] = handle.Result;
+
+                    // 最初の画像を設定
+                    if (index == 0 && targetSpriteRenderer != null)
+                        targetSpriteRenderer.sprite = images[0];
+                        targetImage.sprite = images[0];
+                }
+                else
+                {
+                    Debug.LogError($"[Face] 読み込み失敗: {addressables[index]}");
+                }
+            };
         }
     }
+
 
     // 画像を切り替えるメソッド
     public void SwitchImage()
     {
-        if (targetSpriteRenderer == null || images.Length == 0) return;
+        if (images.Length == 0) return; // 配列が空なら何もしない
 
-        // 次の画像に切り替え
         currentIndex = (currentIndex + 1) % images.Length;
 
-        // SpriteRendererにスプライトを設定
-        targetSpriteRenderer.sprite = images[currentIndex];
+        if (targetSpriteRenderer != null)
+            targetSpriteRenderer.sprite = images[currentIndex];
+        if (targetImage != null)
+            targetImage.sprite = images[currentIndex];
 
         // アニメーションを再生
         PlayAnimations();

@@ -10,11 +10,11 @@ public class SS_script : MonoBehaviour
     // 非表示対象のオブジェクトリスト
     public List<GameObject> objectsToHide;
 
-    // アニメーション用のAnimator
-    public Animator animator;
+    // 複数のAnimatorを設定
+    public List<Animator> animators;
 
     // アニメーションのTrigger名
-    public string Click;
+    public string animationTrigger;
 
     // 現在の表示・非表示状態を管理
     private bool isVisible = true;
@@ -50,13 +50,25 @@ public class SS_script : MonoBehaviour
     // アニメーションを再生するメソッド
     private void PlayAnimation()
     {
-        if (animator != null && !string.IsNullOrEmpty(Click))
+        if (animators.Count == 0)
         {
-            animator.SetTrigger(Click);
+            Debug.LogWarning("Animatorリストが空です。");
+            return;
         }
-        else
+
+        foreach (Animator animator in animators)
         {
-            Debug.LogWarning("AnimatorまたはTrigger名が設定されていません。");
+            if (animator != null && !string.IsNullOrEmpty(animationTrigger))
+            {
+                // Triggerをリセットしてから設定
+                animator.ResetTrigger(animationTrigger);
+                animator.SetTrigger(animationTrigger);
+            }
+            else
+            {
+                Debug.LogWarning("AnimatorまたはTrigger名が設定されていません。");
+            }
         }
+
     }
 }
