@@ -10,7 +10,7 @@ public class FaceChanger : MonoBehaviour
     public SpriteAtlas faceAtlas;
 
     [Header("表情を表示するUI Image")]
-    public Image faceImage;
+    public SpriteTarget faceImage;
 
     [Header("表情のキー（0,1,2,3 など）")]
     public string[] faceKeys;
@@ -82,8 +82,9 @@ public class FaceChanger : MonoBehaviour
             return;
         }
 
-        // UI にセット
-        faceImage.sprite = sp;
+        // SpriteTarget にセット（ここが重要）
+        faceImage.SetSprite(sp);
+
         currentIndex = index;
     }
 
