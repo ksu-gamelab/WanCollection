@@ -1,132 +1,108 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.U2D;   // SpriteAtlas に必要
 
-public class face : MonoBehaviour
+public class FaceChanger : MonoBehaviour
 {
-    [Header("Addressables アドレス")]
-    public string[] addressables;  // 例: "characters/hiiro/face_00"
+    [Header("アトラス（表情差分が入ったもの）")]
+    public SpriteAtlas faceAtlas;
 
+    [Header("表情を表示するUI Image")]
+    public Image faceImage;
 
-    // 画像を格納する配列
-    public Sprite[] images;
+    [Header("表情のキー（0,1,2,3 など）")]
+    public string[] faceKeys;
 
-    // 対象のゲームオブジェクト名
-    public string targetObjectName;
-
-    // 現在の画像インデックス
     private int currentIndex = 0;
 
-    // SpriteRendererを保持
-    private SpriteRenderer targetSpriteRenderer;
-    private Image targetImage; // UI Image 用
 
     // 複数のAnimatorを設定
     public List<Animator> animators;
 
-
     // アニメーションのTrigger名
     public string animationTrigger;
 
-    IEnumerator PreloadSprites()
-    {
-        for (int i = 0; i < addressables.Length; i++)
-        {
-            int index = i;
-            var handle = Addressables.LoadAssetAsync<Sprite>(addressables[i]);
-            yield return handle;
-
-            if (handle.Status == AsyncOperationStatus.Succeeded)
-                images[index] = handle.Result;
-            else
-                Debug.LogError($"[Face] 読み込み失敗: {addressables[index]}");
-        }
-
-        // 最初の画像をセット
-        if (images.Length > 0)
-        {
-            if (targetSpriteRenderer != null) targetSpriteRenderer.sprite = images[0];
-            if (targetImage != null) targetImage.sprite = images[0];
-        }
-    }
-
     void Start()
     {
-        StartCoroutine(PreloadSprites());
 
-        // 対象のゲームオブジェクトを名前で検索
-        GameObject targetObject = GameObject.Find(targetObjectName);
+        var dummy = faceAtlas.spriteCount;
+
+        // アトラスを明示的に保持
+        DontDestroyOnLoad(faceAtlas);
+
+        // または単に参照して Unity に「使ってるよ」と知らせる
+        var _ = faceAtlas.spriteCount;
 
 
-        images = new Sprite[addressables.Length];
-        LoadAllImages();
 
-        if (targetObject == null)
+
+        // faceKeys に何もなければ自動生成 (0,1,2,3)
+        if (faceKeys == null || faceKeys.Length == 0)
         {
-            Debug.LogError($"ゲームオブジェクト '{targetObjectName}' が見つかりません。");
+            faceKeys = new string[] { "0" };
+        }
+
+        // 最初に自動で 0 をセット（または最初のキー）
+        SetFace(0);
+    }
+
+
+    /// <summary>
+    /// 指定 index の表情をセットする
+    /// </summary>
+    public void SetFace(int index)
+    {
+        // 範囲チェック
+        if (faceKeys == null || faceKeys.Length == 0)
+        {
+            Debug.LogError("faceKeys が設定されていません。");
             return;
         }
 
-        // SpriteRenderer か Image を取得
-        targetSpriteRenderer = targetObject.GetComponent<SpriteRenderer>();
-        targetImage = targetObject.GetComponent<Image>();
-
-        if (targetSpriteRenderer == null && targetImage == null)
+        if (faceAtlas == null)
         {
-            Debug.LogError($"{targetObjectName} に SpriteRenderer も Image もアタッチされていません。");
+            Debug.LogError("SpriteAtlas が設定されていません。");
+            return;
         }
 
-    }
-
-
-    void LoadAllImages()
-    {
-        for (int i = 0; i < addressables.Length; i++)
+        if (index < 0 || index >= faceKeys.Length)
         {
-           
-
-            int index = i;
-            Addressables.LoadAssetAsync<Sprite>(addressables[i]).Completed += handle =>
-            {
-                if (handle.Status == AsyncOperationStatus.Succeeded)
-                {
-                    images[index] = handle.Result;
-
-                    // 最初の画像を設定
-                    if (index == 0 && targetSpriteRenderer != null)
-                        targetSpriteRenderer.sprite = images[0];
-                        targetImage.sprite = images[0];
-                }
-                else
-                {
-                    Debug.LogError($"[Face] 読み込み失敗: {addressables[index]}");
-                }
-            };
+            Debug.LogError("SetFace: index が範囲外");
+            return;
         }
+
+        // スプライト取得
+        Sprite sp = faceAtlas.GetSprite(faceKeys[index]);
+
+        if (sp == null)
+        {
+            Debug.LogError("アトラスから取得できません: " + faceKeys[index]);
+            return;
+        }
+
+        // UI にセット
+        faceImage.sprite = sp;
+        currentIndex = index;
     }
 
-
-    // 画像を切り替えるメソッド
-    public void SwitchImage()
+    /// <summary>
+    /// 次の表情へ切り替える（ループ）
+    /// </summary>
+    public void NextFace()
     {
-        if (images.Length == 0) return; // 配列が空なら何もしない
+        if (faceKeys.Length == 0) return;
 
-        currentIndex = (currentIndex + 1) % images.Length;
-
-        if (targetSpriteRenderer != null)
-            targetSpriteRenderer.sprite = images[currentIndex];
-        if (targetImage != null)
-            targetImage.sprite = images[currentIndex];
+        currentIndex = (currentIndex + 1) % faceKeys.Length;
+        SetFace(currentIndex);
 
         // アニメーションを再生
-        PlayAnimations();
+        PlayAnimation();
     }
 
-    // 全てのAnimatorでアニメーションを再生するメソッド
-    private void PlayAnimations()
+    // アニメーションを再生するメソッド
+    private void PlayAnimation()
     {
         if (animators.Count == 0)
         {

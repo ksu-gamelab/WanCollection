@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class CharacterPageLoader : MonoBehaviour
@@ -13,10 +10,10 @@ public class CharacterPageLoader : MonoBehaviour
     public Image bodyImage;
     public Image backgroundImage;
 
-    [Header("表情差分（配列）")]
+    /*[Header("表情差分（配列）")]
     public Image faceDisplayImage;        // 実際に表示される Image
     public Sprite[] expressionSprites;    // 読み込んだ差分が入る配列
-    public int expressionCount = 4;       // 差分枚数（必要な数に調整）
+    public int expressionCount = 4;       // 差分枚数（必要な数に調整）*/
 
     [Header("その他 UI パーツ")]
     public Image[] extraUiImages;         // 複数登録OK
@@ -26,7 +23,7 @@ public class CharacterPageLoader : MonoBehaviour
     {
         LoadBody();
         LoadBackground();
-       // LoadExpressions();
+        //LoadExpressions();
         LoadExtraUI();
     }
 
@@ -34,28 +31,41 @@ public class CharacterPageLoader : MonoBehaviour
     void LoadBody()
     {
         if (bodyImage == null) return;
-        string address = $"characters/{characterId}/body";
-        AddressableImageLoader.LoadToImage(address, bodyImage);
+
+        string path = $"characters/{characterId}/body";
+        Sprite s = Resources.Load<Sprite>(path);
+
+        if (s != null) bodyImage.sprite = s;
+        else Debug.LogError($"[Body] Not found: {path}");
     }
 
     void LoadBackground()
     {
         if (backgroundImage == null) return;
-        string address = $"characters/{characterId}/bg";
-        AddressableImageLoader.LoadToImage(address, backgroundImage);
+
+        string path = $"characters/{characterId}/bg";
+        Sprite s = Resources.Load<Sprite>(path);
+
+        if (s != null) backgroundImage.sprite = s;
+        else Debug.LogError($"[BG] Not found: {path}");
     }
 
     // ------------ 表情差分の読み込み --------------
-   /* void LoadExpressions()
+    /*
+    void LoadExpressions()
     {
         expressionSprites = new Sprite[expressionCount];
 
         for (int i = 0; i < expressionCount; i++)
         {
-            string address = $"characters/{characterId}/face/{i}.png";
-            AddressableImageLoader.LoadToArray(address, expressionSprites, i);
+            string path = $"characters/{characterId}/face/{i}";
+            Sprite s = Resources.Load<Sprite>(path);
+
+            if (s != null) expressionSprites[i] = s;
+            else Debug.LogError($"[Expression] Not found: {path}");
         }
-    }*/
+    }
+    */
 
     // ----------- その他 UI パーツ ---------------
     void LoadExtraUI()
@@ -64,13 +74,17 @@ public class CharacterPageLoader : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            string address = $"characters/{characterId}/{extraUiNames[i]}";
-            AddressableImageLoader.LoadToImage(address, extraUiImages[i]);
+            string path = $"characters/{characterId}/{extraUiNames[i]}";
+            Sprite s = Resources.Load<Sprite>(path);
+
+            if (s != null) extraUiImages[i].sprite = s;
+            else Debug.LogError($"[ExtraUI] Not found: {path}");
         }
     }
 
     // ----------- 表情切り替え ---------------
-    /*public void SetExpression(int index)
+    /*
+    public void SetExpression(int index)
     {
         if (faceDisplayImage == null) return;
 
@@ -81,5 +95,6 @@ public class CharacterPageLoader : MonoBehaviour
         }
 
         faceDisplayImage.sprite = expressionSprites[index];
-    }*/
+    }
+    */
 }

@@ -479,55 +479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220374602}
   m_CullTransparentMesh: 1
---- !u!1 &287144569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 287144571}
-  - component: {fileID: 287144570}
-  m_Layer: 0
-  m_Name: Addressables
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &287144570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287144569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ebc4a7b51d85c94093cdc2a54526a62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteKeys: []
-  prefabKeys: []
-  textKeys: []
-  labels:
-  - 2-Bernese
---- !u!4 &287144571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287144569}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2500925, y: -0.8883801, z: -0.04260901}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &415403479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,13 +2947,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42c83970466c7348a86cf7d2108faa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  images:
-  - {fileID: 21300000, guid: f699c89306961ce40ac25f3ae19ab4f4, type: 3}
-  - {fileID: 21300000, guid: 519fa38d45e0cbf499177c795b01271c, type: 3}
-  - {fileID: 21300000, guid: 7006539b9d9f28b40831daab4e1668f8, type: 3}
-  - {fileID: 21300000, guid: c85e4902068e75c49a84d47d4f40be0a, type: 3}
-  - {fileID: 21300000, guid: 5b0f40ffd6d5fee4b9ba0f54397043bb, type: 3}
-  targetObjectName: corgi
+  faceAtlas: {fileID: 0}
+  faceImage: {fileID: 0}
+  faceKeys: []
   animators:
   - {fileID: 204174393}
   - {fileID: 0}

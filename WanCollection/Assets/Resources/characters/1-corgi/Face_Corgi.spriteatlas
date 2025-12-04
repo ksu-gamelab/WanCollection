@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face_Corgi
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 36cc7a53f44b8e940950130da8402dee, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 8a32feb115370d049960922e18a57d6c: 21300000
+    - e165e613567fbe54aa5334e4e31c3427: 21300000
+    - 9fe96778630029a46a6c708ef797a399: 21300000
+    - eb509e7ef63f756419518322c49bec12: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8a32feb115370d049960922e18a57d6c, type: 3}
+  - {fileID: 21300000, guid: e165e613567fbe54aa5334e4e31c3427, type: 3}
+  - {fileID: 21300000, guid: 9fe96778630029a46a6c708ef797a399, type: 3}
+  - {fileID: 21300000, guid: eb509e7ef63f756419518322c49bec12, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 1
+  - 3
+  - 0
+  - 2
+  m_RenderDataMap: {}
+  m_Tag: Face_Corgi
+  m_IsVariant: 0
