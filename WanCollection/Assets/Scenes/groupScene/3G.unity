@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53db1b7460c8d445a857a144cde6f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Border
+  sceneName: 3-Yorky
 --- !u!114 &171728581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,9 +911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterId: 
-  bodyImage: {fileID: 0}
-  backgroundImage: {fileID: 0}
-  extraUiImages: []
+  body:
+    image: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+  background:
+    image: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+  extras: []
   extraUiNames: []
 --- !u!4 &1537315558
 Transform:
@@ -1089,7 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53db1b7460c8d445a857a144cde6f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Sheltie
+  sceneName: 3-Jack
 --- !u!114 &1847289546
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face_Jack
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 59cfd746c57b67444a8ac96caf6d0acc, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 3402ae1abbd63d24f95dbaf8f7e514c2: 21300000
+    - 62fbcccb997ad6b49aa0faeed6f88293: 21300000
+    - c6d3446f4a8e711498bfc56bc81c9c4c: 21300000
+    - 00f53aef285b642409c2c43fe073b528: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3402ae1abbd63d24f95dbaf8f7e514c2, type: 3}
+  - {fileID: 21300000, guid: 62fbcccb997ad6b49aa0faeed6f88293, type: 3}
+  - {fileID: 21300000, guid: c6d3446f4a8e711498bfc56bc81c9c4c, type: 3}
+  - {fileID: 21300000, guid: 00f53aef285b642409c2c43fe073b528, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 3
+  - 2
+  - 1
+  - 0
+  m_RenderDataMap: {}
+  m_Tag: Face_Jack
+  m_IsVariant: 0

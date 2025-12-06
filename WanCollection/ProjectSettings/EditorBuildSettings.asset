@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: f945f0bbceb28bd49aa663a47bf4228a
   - enabled: 1
     path: Assets/Scenes/man-4koma.unity
-    guid: 2f380b60689511445bf9fff5fb8fb56a
+    guid: 431d133f93ff74348b6e9e7c7956e7e2
   - enabled: 1
     path: Assets/Scenes/Select_Group.unity
     guid: fc6d4a508f9e7b14db473265512ce77d
@@ -66,19 +66,49 @@ EditorBuildSettings:
     path: Assets/Scenes/2-Bernese.unity
     guid: 7a9dd16dc033264418f222a325772e0a
   - enabled: 1
+    path: Assets/Scenes/3-Jack.unity
+    guid: 58191cd24d2cdf740a3c105459516708
+  - enabled: 1
+    path: Assets/Scenes/3-Yorky.unity
+    guid: b7bcd15f848ad514f9752865eb500727
+  - enabled: 1
+    path: Assets/Scenes/4-Dax.unity
+    guid: dfc6faf7db7290440918a077a6450e45
+  - enabled: 1
     path: Assets/Scenes/5-Pome.unity
-    guid: 141cc2eb950aa65478cc437a24fcad87
+    guid: 2eb168448bb554a46ad820ef4aa9026b
   - enabled: 1
     path: Assets/Scenes/5-Husky.unity
-    guid: 682ad665ee02d8642810025a6dd35ce3
+    guid: 0ff24b9c4d3830e47a5d45038b532f4f
   - enabled: 1
     path: Assets/Scenes/5-Chow.unity
-    guid: d07037db3aedda64dbf3c9cfdd1f55f1
+    guid: 0d1de3d7f2dc2884bb57a4a7220171ab
   - enabled: 1
-    path: Assets/Scenes/9-shih.unity
-    guid: 56d8ee8852416f040a5c362a0caac63b
+    path: Assets/Scenes/6-Basset.unity
+    guid: 66687081660ec8b49bae3fd96cd11423
+  - enabled: 1
+    path: Assets/Scenes/6-Dal.unity
+    guid: 45e24524204e1ff4c979ea9ae971d91c
+  - enabled: 1
+    path: Assets/Scenes/7-Weima.unity
+    guid: 9f3fe7021b8a5e046aea3a109f57cc69
+  - enabled: 1
+    path: Assets/Scenes/7-Ilish.unity
+    guid: c6997febe9e15bb42b4a684e772d0637
+  - enabled: 1
+    path: Assets/Scenes/8-Golden.unity
+    guid: dadb8310e981b8a4b9d7c1d3da2c8879
+  - enabled: 1
+    path: Assets/Scenes/8-Labra.unity
+    guid: 0346592500d79844fbe888eaf4a1fe1a
+  - enabled: 1
+    path: Assets/Scenes/9-Shih.unity
+    guid: f0e697b2f42d0084db780583f78588c6
   - enabled: 1
     path: Assets/Scenes/10-Afgan.unity
-    guid: e4e06b802f302a940b0146919fe8cdb0
+    guid: be750174b153c31478e8b0347e2eab47
+  - enabled: 1
+    path: Assets/Scenes/10-Grey.unity
+    guid: e623730a6971e4f49983e703efa56fc0
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5edb4d874907ed9409f3524afab6df46, type: 2}

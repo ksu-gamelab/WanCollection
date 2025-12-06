@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face_Labra
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 194445497fcd9e041b591bfb90c09c6b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 56b5bc33ccd573847b4c1399f15d651e: 21300000
+    - ba58aae49aaf3b64c8f5f817b1f3ac0b: 21300000
+    - 52b08578f2473e040bc8ea1a62ab6096: 21300000
+    - ea0e734ecc5269e428f9b556cd7393fc: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 56b5bc33ccd573847b4c1399f15d651e, type: 3}
+  - {fileID: 21300000, guid: ba58aae49aaf3b64c8f5f817b1f3ac0b, type: 3}
+  - {fileID: 21300000, guid: 52b08578f2473e040bc8ea1a62ab6096, type: 3}
+  - {fileID: 21300000, guid: ea0e734ecc5269e428f9b556cd7393fc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 1
+  - 3
+  - 0
+  - 2
+  m_RenderDataMap: {}
+  m_Tag: Face_Labra
+  m_IsVariant: 0

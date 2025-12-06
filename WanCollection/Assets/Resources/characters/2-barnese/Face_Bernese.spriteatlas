@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face_Bernese
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f53d29b4af671d74ab56c181666987f1, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 760e52371de8b274d80ea75a8280caea: 21300000
+    - 76ca6338820ba8d4d89db99661a79a64: 21300000
+    - 3bcf66780b11cf64b891a1c88f001f80: 21300000
+    - 498f820b668b1474b814c328eb310132: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 760e52371de8b274d80ea75a8280caea, type: 3}
+  - {fileID: 21300000, guid: 76ca6338820ba8d4d89db99661a79a64, type: 3}
+  - {fileID: 21300000, guid: 3bcf66780b11cf64b891a1c88f001f80, type: 3}
+  - {fileID: 21300000, guid: 498f820b668b1474b814c328eb310132, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 0
+  - 3
+  - 2
+  - 1
+  m_RenderDataMap: {}
+  m_Tag: Face_Bernese
+  m_IsVariant: 0

@@ -20,7 +20,20 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 3
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -54,10 +67,12 @@ SpriteAtlas:
     - 922d3bc47b4aabf4fa65fefc8c9b2ef5: 21300000
     - 9f24c7b52a048574dae5e33e49c62f67: 21300000
     - d4f5d1b7761646646a69d6101c004fe2: 21300000
+    - 3fa979c7cafc5a04a9a2512a43cf79c6: 21300000
     - c524bf085968f704abdc9f1399e23d52: 21300000
     - 0e62f6e90bd122a478680369024a4a04: 21300000
     - 639e0c3abf77291488c0d335a1852a16: 21300000
     - 22039e4ad0ed3c24fadb4b17eedaf8c8: 21300000
+    - 3bbac5ba4d1b41947bafa6c55b9e4d40: 21300000
     - 4029ef9ba44f27a4b8bb51cb668d6a3b: 21300000
     - a4a55fdb5e3772e4f84524849e92cf1d: 21300000
     - 9f6d12fb0d6ae1143826ac74d82c7c83: 21300000
@@ -92,10 +107,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 922d3bc47b4aabf4fa65fefc8c9b2ef5, type: 3}
   - {fileID: 21300000, guid: 9f24c7b52a048574dae5e33e49c62f67, type: 3}
   - {fileID: 21300000, guid: d4f5d1b7761646646a69d6101c004fe2, type: 3}
+  - {fileID: 21300000, guid: 3fa979c7cafc5a04a9a2512a43cf79c6, type: 3}
   - {fileID: 21300000, guid: c524bf085968f704abdc9f1399e23d52, type: 3}
   - {fileID: 21300000, guid: 0e62f6e90bd122a478680369024a4a04, type: 3}
   - {fileID: 21300000, guid: 639e0c3abf77291488c0d335a1852a16, type: 3}
   - {fileID: 21300000, guid: 22039e4ad0ed3c24fadb4b17eedaf8c8, type: 3}
+  - {fileID: 21300000, guid: 3bbac5ba4d1b41947bafa6c55b9e4d40, type: 3}
   - {fileID: 21300000, guid: 4029ef9ba44f27a4b8bb51cb668d6a3b, type: 3}
   - {fileID: 21300000, guid: a4a55fdb5e3772e4f84524849e92cf1d, type: 3}
   - {fileID: 21300000, guid: 9f6d12fb0d6ae1143826ac74d82c7c83, type: 3}
@@ -129,10 +146,12 @@ SpriteAtlas:
   - icon_6-1
   - 2-1
   - 1-1
+  - icon_7-1
   - 8-1
   - icon_10-2
   - 3-1
   - 2-2
+  - 7-1
   - 1-2
   - icon_6-2
   - 5-1
