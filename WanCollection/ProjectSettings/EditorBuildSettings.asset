@@ -108,6 +108,9 @@ EditorBuildSettings:
     path: Assets/Scenes/9-shih.unity
     guid: f0e697b2f42d0084db780583f78588c6
   - enabled: 1
+    path: Assets/Scenes/9-Poodle.unity
+    guid: 6c61d466bb39de149b4663b252737ab9
+  - enabled: 1
     path: Assets/Scenes/10-Afgan.unity
     guid: be750174b153c31478e8b0347e2eab47
   - enabled: 1
