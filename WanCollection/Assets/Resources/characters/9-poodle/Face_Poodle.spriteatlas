@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: 36ab0adda9477814b984dfdd201865f6, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - e46da0e7157f9634483a50a4aaca9a19: 21300000
+    - a849df7834a23364eb84eca8dd410262: 21300000
+    - 1bf4cd99a69412d4cac7bf4654e3f4bc: 21300000
+    - b5c2cd4c9672c704cbb37fe272bc19ee: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e46da0e7157f9634483a50a4aaca9a19, type: 3}
+  - {fileID: 21300000, guid: a849df7834a23364eb84eca8dd410262, type: 3}
+  - {fileID: 21300000, guid: 1bf4cd99a69412d4cac7bf4654e3f4bc, type: 3}
+  - {fileID: 21300000, guid: b5c2cd4c9672c704cbb37fe272bc19ee, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 0
+  - 1
+  - 2
+  - 3
   m_RenderDataMap: {}
   m_Tag: Face_Poodle
   m_IsVariant: 0

@@ -262,10 +262,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chara_button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 587.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 958.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00001049
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00097656
+      objectReference: {fileID: 0}
     - target: {fileID: 3308852897752012387, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f699c89306961ce40ac25f3ae19ab4f4, type: 3}
+    - target: {fileID: 5883391523661629902, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3bcf66780b11cf64b891a1c88f001f80, type: 3}
     - target: {fileID: 6355066390004955272, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: sceneName
       value: 2-Bernese
@@ -464,10 +484,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chara_button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 439.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1109.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0010033
+      objectReference: {fileID: 0}
     - target: {fileID: 3308852897752012387, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 57f752e404bca6e4abf70dd9dbad71c6, type: 3}
+    - target: {fileID: 5883391523661629902, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a7b8025bea7af440af45e831e33cf87, type: 3}
     - target: {fileID: 6355066390004955272, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: sceneName
       value: 2-Dober
@@ -1090,10 +1130,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chara_button
       objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 454.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 795.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000022888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000017166
+      objectReference: {fileID: 0}
     - target: {fileID: 3308852897752012387, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7ce0b2f78e0edd643bd8931ba926e86e, type: 3}
+    - target: {fileID: 5883391523661629902, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 04e93b3715266cc4a8606f62327df365, type: 3}
     - target: {fileID: 6355066390004955272, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: sceneName
       value: 2-Bull

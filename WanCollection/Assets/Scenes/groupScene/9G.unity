@@ -488,10 +488,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chara_button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 510.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 855.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.2125
+      objectReference: {fileID: 0}
     - target: {fileID: 3308852897752012387, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: bcf2b5d29932c7841bb386c941198123, type: 3}
+    - target: {fileID: 5883391523661629902, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a849df7834a23364eb84eca8dd410262, type: 3}
     - target: {fileID: 6355066390004955272, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: sceneName
       value: 9-Poodle
@@ -1024,10 +1044,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chara_button
       objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 470.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 833.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0010185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275538863022934659, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0013018
+      objectReference: {fileID: 0}
     - target: {fileID: 3308852897752012387, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 388bb2096987cb84c84cf64f0c905501, type: 3}
+    - target: {fileID: 5883391523661629902, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 59e5d67453d32e948b2fe55bf36fb10f, type: 3}
     - target: {fileID: 6355066390004955272, guid: 045b6229d02cc4d4a8adccb60c7e43fd, type: 3}
       propertyPath: sceneName
       value: 9-Shih

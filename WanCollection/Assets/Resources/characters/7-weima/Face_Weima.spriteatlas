@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: 1a85cae5f6d033444a072a429da98cf5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - 8dc35c861e2ef97459dd74207e5e2f3e: 21300000
+    - 74092358282d47c4cbd92449f3d4ec2d: 21300000
+    - d57e162d05635a04d87ee33e864e9166: 21300000
+    - 4532c54f5a8a1c34db27af7e74427cfa: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8dc35c861e2ef97459dd74207e5e2f3e, type: 3}
+  - {fileID: 21300000, guid: 74092358282d47c4cbd92449f3d4ec2d, type: 3}
+  - {fileID: 21300000, guid: d57e162d05635a04d87ee33e864e9166, type: 3}
+  - {fileID: 21300000, guid: 4532c54f5a8a1c34db27af7e74427cfa, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 3
+  - 2
+  - 1
+  - 0
   m_RenderDataMap: {}
   m_Tag: Face_Weima
   m_IsVariant: 0

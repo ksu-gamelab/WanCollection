@@ -1004,8 +1004,9 @@ MonoBehaviour:
   objectsToHide:
   - {fileID: 8395353180216357502}
   - {fileID: 2104989813}
-  animators: []
-  animationTrigger: 
+  animators:
+  - {fileID: 1541256446}
+  animationTrigger: Click
 --- !u!1001 &419030864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2147,8 +2148,9 @@ MonoBehaviour:
   objectsToHide:
   - {fileID: 990275515}
   - {fileID: 575825794}
-  animators: []
-  animationTrigger: 
+  animators:
+  - {fileID: 1541256446}
+  animationTrigger: Click
 --- !u!4 &806842072
 Transform:
   m_ObjectHideFlags: 0
@@ -3068,8 +3070,9 @@ MonoBehaviour:
   objectsToHide:
   - {fileID: 130288934}
   - {fileID: 1387739705}
-  animators: []
-  animationTrigger: 
+  animators:
+  - {fileID: 1541256446}
+  animationTrigger: Click
 --- !u!4 &1113939728
 Transform:
   m_ObjectHideFlags: 0
@@ -4008,6 +4011,11 @@ GameObject:
 --- !u!224 &1541256445 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1824382241813785198, guid: 32453f0c3467628478f336c55e6f11dd, type: 3}
+  m_PrefabInstance: {fileID: 1596365011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1541256446 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6481875973097820254, guid: 32453f0c3467628478f336c55e6f11dd, type: 3}
   m_PrefabInstance: {fileID: 1596365011}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1578444257

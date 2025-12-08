@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: 34438ccb5fda88440962bbbbd842ecdd, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - 289d1ce456bbf324099ee1caf95cb1ef: 21300000
+    - 788e05b6cf96cd34a85f967de7eb7a92: 21300000
+    - c971160d2bc6850458b5a07c9a13e918: 21300000
+    - 7686f7ee28b1aa441b80686f1b236c5d: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 289d1ce456bbf324099ee1caf95cb1ef, type: 3}
+  - {fileID: 21300000, guid: 788e05b6cf96cd34a85f967de7eb7a92, type: 3}
+  - {fileID: 21300000, guid: c971160d2bc6850458b5a07c9a13e918, type: 3}
+  - {fileID: 21300000, guid: 7686f7ee28b1aa441b80686f1b236c5d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 3
+  - 2
+  - 0
+  - 1
   m_RenderDataMap: {}
   m_Tag: Face_Basset
   m_IsVariant: 0

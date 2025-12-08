@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: cf58adf3376672b45a4a45bbd1c6981f, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - 1adf1713646e8714db63b3fe0bb00e88: 21300000
+    - e8a95836fcc1f9b41bc30ada18c52276: 21300000
+    - ab7d72a7b84227e4da40c74e4c4f0707: 21300000
+    - 4133adb84ae581347af53aba8b02d8a5: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 1adf1713646e8714db63b3fe0bb00e88, type: 3}
+  - {fileID: 21300000, guid: e8a95836fcc1f9b41bc30ada18c52276, type: 3}
+  - {fileID: 21300000, guid: ab7d72a7b84227e4da40c74e4c4f0707, type: 3}
+  - {fileID: 21300000, guid: 4133adb84ae581347af53aba8b02d8a5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 0
+  - 3
+  - 2
+  - 1
   m_RenderDataMap: {}
   m_Tag: Face_Ilish
   m_IsVariant: 0

@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings: []
     packingSettings:
       serializedVersion: 2
-      padding: 4
+      padding: 2
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: b278fe37fbf249e4584795e9abf22bf5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - d3a4c160bf746974295bda05ab256cce: 21300000
+    - b3f954484fdf321438786894ade3053a: 21300000
+    - a957b94ab7509ef4f8322bfe29e1ecb4: 21300000
+    - 7c73db9b90686744f8d76abfe5b8ea73: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d3a4c160bf746974295bda05ab256cce, type: 3}
+  - {fileID: 21300000, guid: b3f954484fdf321438786894ade3053a, type: 3}
+  - {fileID: 21300000, guid: a957b94ab7509ef4f8322bfe29e1ecb4, type: 3}
+  - {fileID: 21300000, guid: 7c73db9b90686744f8d76abfe5b8ea73, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 2
+  - 3
+  - 0
+  - 1
   m_RenderDataMap: {}
   m_Tag: Face_Dal
   m_IsVariant: 0

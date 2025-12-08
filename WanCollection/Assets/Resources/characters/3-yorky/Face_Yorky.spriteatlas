@@ -31,14 +31,27 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 102900000, guid: 1c74ad198757fe34cac302442ce9a5ef, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - 76f9de226e8d2d146a80b98f859bb325: 21300000
+    - 32ae150ca41908e4f8a88aced7b6717d: 21300000
+    - d09b8dcdfb11dbd48847a8937442edb9: 21300000
+    - ebfb4b4e0ead0a34e9a129f807c9f779: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 76f9de226e8d2d146a80b98f859bb325, type: 3}
+  - {fileID: 21300000, guid: 32ae150ca41908e4f8a88aced7b6717d, type: 3}
+  - {fileID: 21300000, guid: d09b8dcdfb11dbd48847a8937442edb9, type: 3}
+  - {fileID: 21300000, guid: ebfb4b4e0ead0a34e9a129f807c9f779, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 2
+  - 3
+  - 0
+  - 1
   m_RenderDataMap: {}
   m_Tag: Face_Yorky
   m_IsVariant: 0
