@@ -1486,7 +1486,7 @@ MonoBehaviour:
   - {fileID: 1894510126}
   backButton: {fileID: 2104989815}
   animators:
-  - {fileID: 1541256446}
+  - {fileID: 0}
   animationTrigger: Click
 --- !u!82 &363006977
 AudioSource:
@@ -1634,11 +1634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5800684768167748272, guid: 4f46936b46775af46961721607a97d9f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -20
+      value: -9.9998
       objectReference: {fileID: 0}
     - target: {fileID: 5800684768167748272, guid: 4f46936b46775af46961721607a97d9f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.000122
       objectReference: {fileID: 0}
     - target: {fileID: 7014181886987223824, guid: 4f46936b46775af46961721607a97d9f, type: 3}
       propertyPath: m_Pivot.x
@@ -5266,11 +5266,6 @@ GameObject:
 --- !u!224 &1541256445 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1824382241813785198, guid: 32453f0c3467628478f336c55e6f11dd, type: 3}
-  m_PrefabInstance: {fileID: 1596365011}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1541256446 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6481875973097820254, guid: 32453f0c3467628478f336c55e6f11dd, type: 3}
   m_PrefabInstance: {fileID: 1596365011}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1544303459 stripped
