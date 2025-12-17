@@ -7,6 +7,10 @@ public class BGM_Script : MonoBehaviour
 {
     private static BGM_Script instance;
 
+    public AudioSource bgm;
+    bool started = false;
+
+
     private void Awake()
     {
         if (instance == null)
@@ -25,5 +29,14 @@ public class BGM_Script : MonoBehaviour
     private void Start()
     {
         SceneManager.LoadScene("TitleScene");
+    }
+
+    void Update()
+    {
+        if (!started && Input.GetMouseButtonDown(0))
+        {
+            bgm.Play();
+            started = true;
+        }
     }
 }
