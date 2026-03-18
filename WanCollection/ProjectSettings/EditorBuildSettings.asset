@@ -87,11 +87,20 @@ EditorBuildSettings:
     path: Assets/Scenes/5-Chow.unity
     guid: 0d1de3d7f2dc2884bb57a4a7220171ab
   - enabled: 1
+    path: Assets/Scenes/5-Samo.unity
+    guid: 6f2c4d33d1f6fa640b095fb952b9e7f5
+  - enabled: 1
+    path: Assets/Scenes/5-Shiba.unity
+    guid: 9b80f084bfca819498625146a8737720
+  - enabled: 1
     path: Assets/Scenes/6-Basset.unity
     guid: 66687081660ec8b49bae3fd96cd11423
   - enabled: 1
     path: Assets/Scenes/6-Dal.unity
     guid: 45e24524204e1ff4c979ea9ae971d91c
+  - enabled: 1
+    path: Assets/Scenes/6-Beagle.unity
+    guid: 8342212754e424448b308e637e4fbe4d
   - enabled: 1
     path: Assets/Scenes/7-Weima.unity
     guid: 9f3fe7021b8a5e046aea3a109f57cc69

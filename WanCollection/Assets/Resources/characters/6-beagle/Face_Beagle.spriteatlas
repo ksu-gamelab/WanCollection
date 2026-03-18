@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face_Beagle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c7124ee18ea3fd04ead8ab478550edd0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - e470dac1c5afc27469392932437323b5: 21300000
+    - 832169064de7f3249ace1b73efdc0fb4: 21300000
+    - 14a1b2085b42ac44da4b53cbcdbf92ec: 21300000
+    - 87f5fedf5ddf1e64394bf711c8fee20a: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e470dac1c5afc27469392932437323b5, type: 3}
+  - {fileID: 21300000, guid: 832169064de7f3249ace1b73efdc0fb4, type: 3}
+  - {fileID: 21300000, guid: 14a1b2085b42ac44da4b53cbcdbf92ec, type: 3}
+  - {fileID: 21300000, guid: 87f5fedf5ddf1e64394bf711c8fee20a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 2
+  - 0
+  - 1
+  - 3
+  m_RenderDataMap: {}
+  m_Tag: Face_Beagle
+  m_IsVariant: 0
